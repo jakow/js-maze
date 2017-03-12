@@ -12024,7 +12024,7 @@ function drawCoordinates(snap, width, height, scale) {
 var canvas = (0, _snapsvgCjs2.default)('#canvas');
 var scale = 40; // 'pixels' per cell
 var mazeWidth = 10;
-var mazeHeight = 5;
+var mazeHeight = 10;
 var strokeWidth = 2;
 var canvasHeight = mazeHeight * scale + strokeWidth;
 var canvasWidth = mazeWidth * scale + strokeWidth;
@@ -12052,4 +12052,3 @@ draw();
 
 /***/ })
 /******/ ]);
-//# sourceMappingURL=main.dfaa8201aeb8bb558f5c.js.map

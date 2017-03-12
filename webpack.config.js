@@ -4,7 +4,6 @@ const CircularDependencyPlugin = require('circular-dependency-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 
 const isDevelopment = process.env.NODE_ENV === 'development';
-const outputFolder = isDevelopment ? 'dist' : 'build';
 const modulePaths = [
   'src',
 ];
@@ -20,7 +19,7 @@ const embedHtml = new HtmlPlugin({ template: './src/index.html' });
 
 const coreConfig = {
   // cache: true,
-  devtool: 'source-map',
+  devtool: isDevelopment ? 'source-map' : '',
   entry: './src/app.js',
   // path where to look for imports
   resolve: {
@@ -28,7 +27,7 @@ const coreConfig = {
   },
   output: {
     filename: isDevelopment ? 'main.js' : 'main.[chunkhash].js',
-    path: path.resolve(__dirname, outputFolder),
+    path: path.resolve(__dirname, isDevelopment ? 'dist' : 'build'),
   },
   module: {
     rules: [

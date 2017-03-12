@@ -34,6 +34,6 @@
   },
   "scripts": {
     "watch": "webpack --progress --watch",
-    "build": "NODE_ENV='production' webpack"
+    "build:prod": "rm -rf build; NODE_ENV='production' webpack"
   }
 }

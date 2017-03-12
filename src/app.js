@@ -133,7 +133,7 @@ function drawCoordinates(snap, width, height, scale) {
 const canvas = Snap('#canvas');
 const scale = 40; // 'pixels' per cell
 const mazeWidth = 10;
-const mazeHeight = 5;
+const mazeHeight = 10;
 const strokeWidth = 2;
 const canvasHeight = mazeHeight * scale + strokeWidth;
 const canvasWidth = mazeWidth * scale + strokeWidth;
