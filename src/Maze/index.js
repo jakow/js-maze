@@ -1,2 +1,2 @@
 'use strict';
-export { generateMaze, generateRectangularWalls, Wall } from './Maze';
+export { Maze, Wall, generateRectangularWalls} from './Maze';

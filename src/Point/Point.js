@@ -12,7 +12,7 @@ export class Point {
 			throw new TypeError('Non numeric Point coordinates');
 		}
 		this[symX] = Number.parseInt(x) || Number.parseFloat(x);
-		this[symY] = Number.parseInt(y) || Number.parseFloat();
+		this[symY] = Number.parseInt(y) || Number.parseFloat(y);
 	}
 
 	get x() { return this[symX]; }

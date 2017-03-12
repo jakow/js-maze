@@ -9,7 +9,6 @@ export class Wall {
 	* @param {Point} startPoint The start point 
 	*/
 	constructor(cellA, cellB, startPoint, endPoint) {
-		// for computation
 		this.cellA = cellA;
 		this.cellB = cellB; 
 		this.startPoint = startPoint;

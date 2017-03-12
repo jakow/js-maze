@@ -1,6 +1,7 @@
 'use strict';
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const CircularDependencyPlugin = require('circular-dependency-plugin');
 const HtmlPlugin = require('html-webpack-plugin');
 const isDevelopment = process.env.NODE_ENV === 'development';
 const modulePaths = [
@@ -71,7 +72,9 @@ const coreConfig = {
 		]
 	},
 	plugins: [ 
-		extractSass, embedHtml
+		extractSass, 
+		embedHtml, 
+		new CircularDependencyPlugin({failOnError: true})
 	]
 };
 
