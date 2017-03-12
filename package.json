@@ -33,6 +33,7 @@
     "snapsvg-cjs": "^0.0.4"
   },
   "scripts": {
-    "watch": "webpack --progress --watch"
+    "watch": "webpack --progress --watch",
+    "build": "NODE_ENV='production' webpack"
   }
 }

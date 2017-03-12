@@ -1,9 +1,11 @@
-import Snap, { mina } from 'snapsvg-cjs';
+import Snap from 'snapsvg-cjs';
 import './app.scss';
 import Maze from './Maze/Maze';
 import generateRectangularWalls from './Maze/generators/rectangular';
 
-// jshint ignore: start
+// a hack to use snap.svg mina which is only defined on window
+const mina = window.mina; // eslint-disable-line
+
 async function drawRectangularWalls(snap, walls, mazeWidth, mazeHeight, scale, style, animate) {
   const strokeWidth = style.strokeWidth;
   const lines = [];
