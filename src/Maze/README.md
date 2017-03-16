@@ -4,7 +4,7 @@ So far, the code supports randomised Kruskal's algorithm to generate the maze. T
 
 `In a rectangular N by M maze, cells are numbered left-to-right, top to bottom from 0 to N*M-1. Thus the neighbour of a cell C somewhere in the middle of therefore C-1 (left), C+1 (right), C+N (bottom), C-N (top).`
 
-The neighbour generation is 
+It also needs to know of a list of walls that separate each two neighbouring cells. Here, a [wall](Wall.js) is just a container for two neighbouring cells. This again allows to decouple graphical representation from data representation.
 
 ## Kruskal's randomised algorithm
 
