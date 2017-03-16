@@ -20,5 +20,5 @@ From wiki:
 >
 >  b. Join the sets of the formerly divided cells."
 
-To make the set operations efficient, a  [Union Find](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) is [implemented](UnionFind.js).
+To make the set operations efficient, a [Union Find](https://en.wikipedia.org/wiki/Disjoint-set_data_structure) (also known as disjoint set) data structure is [implemented](UnionFind.js).
 
