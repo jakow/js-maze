@@ -1,4 +1,4 @@
-## Maze generation algorithms.
+## Maze generation algorithms
 
 So far, the code supports randomised Kruskal's algorithm to generate the maze. The code attempts to decouple the maze *graph* generation from the graphical representation of the maze. The only thing that the algorithm needs to know is how to calculate the neighbour indices of given maze cell, i.e:
 
